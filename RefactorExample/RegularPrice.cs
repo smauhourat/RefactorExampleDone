@@ -11,11 +11,6 @@ namespace RefactorExample
 
         }
 
-        public override int GetPriceCode()
-        {
-            return Movie.REGULAR;
-        }
-
         public override double GetCharge(int daysRented)
         {
             double output = 2;
@@ -24,6 +19,11 @@ namespace RefactorExample
                 output = (daysRented - 2) * 1.5;
 
             return output;
+        }
+
+        public override int GetFrequentRenterPoints(int daysRented)
+        {
+            return 1;
         }
     }
 }

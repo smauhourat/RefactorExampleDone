@@ -13,10 +13,7 @@ namespace RefactorExample
             _movie = movie;
             _daysRented = daysRented;
         }
-        public int GetDaysRented()
-        {
-            return _daysRented;
-        }
+
         public Movie GetMovie()
         {
             return _movie;

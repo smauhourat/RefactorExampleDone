@@ -18,10 +18,7 @@ namespace RefactorExample
             _title = title;
             SetPriceCode(priceCode);
         }
-        public int GetPriceCode()
-        {
-            return _price.GetPriceCode();
-        }
+
         public void SetPriceCode(int arg)
         {
             switch (arg)
@@ -42,16 +39,6 @@ namespace RefactorExample
         public string GetTitle()
         {
             return _title;
-        }
-
-        public void SetPrice(Price price)
-        {
-            _price = price;
-        }
-
-        public Price GetPrice()
-        {
-            return _price;
         }
 
         public double GetCharge(int daysRented)

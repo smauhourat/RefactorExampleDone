@@ -93,5 +93,13 @@ namespace XUnitTestRefactorExample
 
             Assert.Equal(result, expectedResult);
         }
+
+        [Fact]
+        public void Test5()
+        {
+            var customer = new Customer("Santiago");
+
+            Assert.Throws<IllegalArgumentException>(() => new Movie("Movie1", 999));
+        }
     }
 }
